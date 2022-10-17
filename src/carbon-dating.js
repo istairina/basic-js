@@ -45,8 +45,8 @@ module.exports = {
 };
 
 
-//test = 1;
-//dateSample(test);
+test = 3;
+console.log(dateSample(test));
 
 /*
       ln(N0 / N)
