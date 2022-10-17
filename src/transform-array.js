@@ -14,6 +14,7 @@ const { NotImplementedError } = require('../extensions/index.js');
  * 
  */
 function transform(arr) {
+  console.log("arguments " + arguments);
   let strDisNext = '--discard-next';
   let strDisPrev = '--discard-prev';
   let strDblNext = '--double-next';
@@ -64,7 +65,7 @@ function transform(arr) {
     if (newArr[i] == strDblNext) {
       console.log("double next start");
       if (newArr[i + 1]) {
-        //console.log('here');
+        console.log('here');
         newArr[i] = newArr[i + 1];
       }
       else {
